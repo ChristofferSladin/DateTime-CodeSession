@@ -158,7 +158,6 @@ namespace DateTime_CodeSession
             var todaysDateShort = todaysDate.ToString("yyyy-MM-dd");
 
             Console.WriteLine($"Dagens datum: {todaysDateShort}\nDagens datum och tid: {todaysDateFull}");
-
         }
         public void CalculateDaysToChristmasVacation()
         {
@@ -171,7 +170,6 @@ namespace DateTime_CodeSession
 
             var diff = date - vacationStarts;
             Console.WriteLine($"Håll ut Det är {diff} dagar kvar till lovet");
-
         }
 
         public void InVoice()
@@ -188,16 +186,12 @@ namespace DateTime_CodeSession
                 forFalloDag = forFalloDag.AddDays(1); // monday
 
             Console.WriteLine($"Förfallo Dag: {forFalloDag.ToString("yyyy - MM - dd")}");
-
-
         }
         public void SkrivUTDatum()
         {
             var today = DateTime.Now;
             var snyggtDatum = today.ToString("yyyy-MM-dd");
             Console.WriteLine(snyggtDatum);
-
-
         }
         public string GetSwedishWeekDayName(DayOfWeek dayOfWeek)
         {
@@ -259,11 +253,7 @@ namespace DateTime_CodeSession
             var diff = today - yourBirthDay;
 
             Console.WriteLine($"Du är {Convert.ToInt32(diff.TotalDays)} gammal. Har du använt dom väl?");
-
         }
-
-
-
         public void Run()
         {
             //DayCounter();
@@ -278,7 +268,5 @@ namespace DateTime_CodeSession
             //DateDiff();
             //Idag();
         }
-
-
     }
 }
